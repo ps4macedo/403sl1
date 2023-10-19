@@ -51,7 +51,9 @@ function c_code_done(printf_ans, main_ret)
 
 function runScripts()
 {
+
 // exploit.js ---------------------------------------------------------------------------------------------
+window.progress.innerHTML="Executando o exploit, <font color=\"#ee596f\">AGUARDE...</font>"
 var PAGE_SIZE = 16384;
 var SIZEOF_CSS_FONT_FACE = 0xb8;
 var HASHMAP_BUCKET = 208;
@@ -513,7 +515,7 @@ print(read_mem(addrof(obj), 48));
 
 }
 poc();
-alert("P R O N T O ! ! !")
+window.progress.innerHTML="Exploit REALIZADO. Carregado o ps5-kstuff.bin <font color=\"#ee596f\">AGUARDE...</font>"
 
 //fim do exploit.js ----------------------------------------------------------------------------------------------------------------------
 
