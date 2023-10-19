@@ -43,7 +43,7 @@ function c_code_done(printf_ans, main_ret)
     if(main_ret)
         window.progress.innerHTML="Falha no jailbreak! Reinicie seu PS5 e tente novamente!\n"+printf_ans+"\nmain() returned "+main_ret;
     else
-		window.progress.innerHTML="Exploit CONCLUÍDO. Carregado o <font color=\"#ee596f\">ps5-kstuff.bin...</font>"
+		window.progress.innerHTML="Desbloqueio CONCLUÍDO. Carregado o <font color=\"#ee596f\">ps5-kstuff.bin...</font>"
     window.sigsegv_handler = 0;
     runJS('sigsegv.js');
     read_ptr_at(0);
@@ -515,6 +515,7 @@ print(read_mem(addrof(obj), 48));
 
 }
 poc();
+window.progress.innerHTML="Exploit CONCLUÍDO. Executando o <font color=\"#ee596f\">JAILBREAK...</font>"
 
 //fim do exploit.js ----------------------------------------------------------------------------------------------------------------------
 
